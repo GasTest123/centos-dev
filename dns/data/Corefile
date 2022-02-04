@@ -1,0 +1,24 @@
+(common) {
+    reload 10s
+    whoami
+    #log
+    #errors
+}
+
+local:53 {
+    #hosts /data/hosts.local
+    file /data/zone.local
+    import common
+}
+
+x:53 {
+    hosts /data/hosts.x
+    #file /data/zone.x
+    import common
+}
+
+#.:53 {
+#    forward . /etc/resolv.conf
+#    import common
+#}
+
