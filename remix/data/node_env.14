@@ -1,0 +1,15 @@
+NODE_VER=$(echo ${NODE_VERSION} | awk -F. '{print $1}')
+NODE_VER=14
+
+export NODE_HOME="/app/node.$NODE_VER"
+export NODE_HOMEBIN="$NODE_HOME/bin"
+
+export NODE_PATH="$NODE_HOME/lib/node_modules"
+
+export NPM_CONFIG_PREFIX="$NODE_HOME"
+export NPM_CONFIG_CACHE="$NODE_HOME/.npm"
+export NPM_CONFIG_INIT_MODULE="$NODE_HOME/.npm-init.js"
+export NPM_CONFIG_USERCONFIG="$NODE_HOME/.npmrc"
+
+export PATH=$PATH:$NODE_HOME:$NODE_HOMEBIN
+

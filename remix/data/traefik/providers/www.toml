@@ -1,0 +1,18 @@
+[http.middlewares]
+  [http.middlewares.remix.addPrefix]
+    prefix = "/remix"
+
+[http.routers.remix]
+  rule = "PathPrefix(`/`)"
+  entrypoints = "http"
+  service = "www"
+  middlewares = ["remix"]
+
+[http.routers.workspace]
+  rule = "PathPrefix(`/workspace`)"
+  entrypoints = "http"
+  service = "www"
+
+[[http.services.www.loadBalancer.servers]]
+  url = "http://127.0.0.1:2015/"
+

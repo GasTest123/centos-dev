@@ -1,0 +1,28 @@
+[tcp.routers.web3]
+  rule = "HostSNI(`*`)"
+  entrypoints = "web3"
+  service = "web3"
+[[tcp.services.web3.loadBalancer.servers]]
+  address = "127.0.0.1:8545"
+
+[tcp.routers.remix]
+  rule = "HostSNI(`*`)"
+  entrypoints = "remix"
+  service = "remix"
+[[tcp.services.remix.loadBalancer.servers]]
+  address = "127.0.0.1:65520"
+
+[tcp.routers.remix2]
+  rule = "HostSNI(`*`)"
+  entrypoints = "remix2"
+  service = "remix2"
+[[tcp.services.remix2.loadBalancer.servers]]
+  address = "127.0.0.1:65522"
+
+[tcp.routers.remix3]
+  rule = "HostSNI(`*`)"
+  entrypoints = "remix3"
+  service = "remix3"
+[[tcp.services.remix3.loadBalancer.servers]]
+  address = "127.0.0.1:65523"
+

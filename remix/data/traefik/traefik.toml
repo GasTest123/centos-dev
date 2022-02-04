@@ -1,0 +1,25 @@
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+
+  [entryPoints.traefik]
+  address = ":8080"
+
+  [entryPoints.web3]
+  address = ":8535"
+  [entryPoints.remix]
+  address = ":65510"
+  [entryPoints.remix2]
+  address = ":65512"
+  [entryPoints.remix3]
+  address = ":65513"
+
+[api]
+  dashboard = true
+  insecure = true
+
+[providers.file]
+  directory = "/app/traefik/providers"
+  #filename = "/app/traefik/providers/services.toml"
+  watch = true
+

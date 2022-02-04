@@ -1,0 +1,29 @@
+{
+  admin :2019
+}
+
+:2015 {
+  redir /remix /remix/ 308
+  redir /workspace /workspace/ 308
+
+  route /remix/* {
+    uri strip_prefix /remix/
+    file_server {
+      root /app/remix/remix
+      browse
+    }
+  }
+  route /workspace/* {
+    uri strip_prefix /workspace/
+    file_server {
+      root /root
+      browse
+    }
+  }
+
+  file_server * {
+    root /app/remix
+    browse
+  }
+}
+
