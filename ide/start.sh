@@ -6,7 +6,8 @@ docker run -d --restart always \
   --dns 10.21.100.10 \
   -p 8888:8080 \
   -p 33000:33000 \
-  -v /root/.ssh.git:/root/.ssh \
+  -v /root/.git/.ssh:/root/.ssh \
+  -v /root/.git/.gitconfig:/root/.gitconfig \
   -v /opt/docker/ide/code:/opt/code \
   -v /opt/docker/ide/code/.config:/root/.config \
   -v /opt/docker/ide/code/.local:/root/.local \
