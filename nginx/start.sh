@@ -1,5 +1,6 @@
 docker run -d --restart always \
   --name nginx \
+  --add-host mac:10.21.48.100 \
   -p 80:80 \
   -p 443:443 \
   -p 4000:4000 \
