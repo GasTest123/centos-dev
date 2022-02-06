@@ -14,6 +14,7 @@ docker run -d --restart always \
   -v /opt/docker/ssl:/root/.ssl/certs \
   -v /opt/docker/_work:/root/workspace \
   -v /opt/docker:/root/docker \
+  -w /root \
   -u "$(id -u):$(id -g)" \
   -e "DOCKER_USER=$USER" \
   --entrypoint=/opt/code/entrypoint.sh \
