@@ -1,0 +1,52 @@
+.*
+!.gitignore
+
+# common
+_*
+*_
+
+bin
+bak
+*.bak
+
+# ssl
+/ssl/certs.*
+
+# ssh
+/ssh/data/ssh
+
+# dns
+
+# nginx
+
+# ide
+/ide/code/node.14
+/ide/code/code-server
+/ide/code/openvscode-server
+
+# remix
+/remix/data/node.14
+/remix/data/caddy/caddy
+/remix/data/traefik/traefik
+/remix/data/remix
+/remix/data/ganache
+/remix/data/tools
+
+# ipfs
+/ipfs/data
+
+# mysql
+/mysql/data
+
+# redis
+/redis/data
+
+# etcd
+/etcd/data
+
+# consul
+/consul/data
+
+# k3s
+/k3s
+
