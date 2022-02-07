@@ -1,6 +1,8 @@
+IP=$(cat /etc/hosts | grep 'mac' | awk -F ' ' '{print $1}')
+
 docker run -d --restart always \
   --name nginx \
-  --add-host mac:10.21.48.100 \
+  --add-host mac:${IP} \
   -p 80:80 \
   -p 443:443 \
   -p 4000:4000 \
