@@ -16,5 +16,6 @@ docker run -d --restart always \
   -cert_dir=/root/ssl/certs.local/ \
   -private_key_path=/root/.ssh/id_ed25519
 
-#ssh -R app:80:vm:33000 vm.local -p 2222
+# ssh -R app:80:vm:33000 vm.local -p 2222
+# kill -2 $(pidof ssh)
 

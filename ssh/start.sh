@@ -12,5 +12,6 @@ docker run -d --restart always \
   --entrypoint=/app/run.sh \
   taichunmin/serveo-server
 
-#ssh -R app:80:vm:33000 vm.local -p 2222
+# ssh -R app:80:vm:33000 vm.local -p 2222
+# kill -2 $(pidof ssh)
 
