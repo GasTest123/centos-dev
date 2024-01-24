@@ -2,7 +2,7 @@
 # create self-signed server certificate:
 
 CERT="rootCA"
-DAYS=825
+DAYS=7300
 ORG="LocalCA"
 CN="LocalCA Root RSA"
 OUT="./certs.rootCA"
