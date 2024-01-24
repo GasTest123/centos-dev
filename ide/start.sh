@@ -1,4 +1,5 @@
 docker run -d --restart always \
+  --security-opt="seccomp=unconfined" --cap-add=SYS_PTRACE \
   --name ide \
   --hostname ide \
   --add-host vm:10.21.248.107 \

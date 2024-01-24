@@ -35,3 +35,8 @@ datadir		= /var/lib/mysql
 bind-address	= 0.0.0.0
 # Disabling symbolic-links is recommended to prevent assorted security risks
 symbolic-links=0
+
+[mysqld]
+innodb_ft_min_token_size=2
+ft_min_word_len=2
+
