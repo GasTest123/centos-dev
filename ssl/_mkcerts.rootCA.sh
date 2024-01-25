@@ -16,7 +16,7 @@ echo "Generating new HTTPS SSL certs..."
 cd $OUT
 
 openssl genrsa -out $CERT.key 2048
-openssl req -new -sha256 -key $CERT.key -out $CERT.csr -subj "/C=CN/O=$ORG/CN=$CN"
+openssl req -new -sha256 -key $CERT.key -out $CERT.csr -subj "/C=CN/O=$ORG/OU=$ORG/CN=$CN"
 openssl x509 -req -sha256 -days $DAYS -in $CERT.csr -signkey $CERT.key -out $CERT.crt
 
 openssl x509 -in $CERT.crt -text -noout

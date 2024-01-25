@@ -7,11 +7,11 @@ ROOTCAKEY="../certs.rootCA/rootCA.key"
 CERT="ca"
 DAYS=3650
 ORG="LocalDEV"
-CN="LocalDEV vm.x"
-DNS1="vm"
-DNS2="vm.x"
-DNS3="*.vm.x"
-OUT="./certs.vm"
+CN="LocalDEV x.x"
+DNS1="x"
+DNS2="x.x"
+DNS3="*.x.x"
+OUT="./certs.x"
 
 echo "Clearing existing HTTPS SSL certs..."
 rm -rf $OUT

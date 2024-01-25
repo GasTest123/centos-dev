@@ -5,12 +5,15 @@ ROOTCA="../certs.rootCA/rootCA.crt"
 ROOTCAKEY="../certs.rootCA/rootCA.key"
 
 CERT="ca"
-DAYS=825
-ORG="DEV"
-CN="*.vm.local"
-DNS1="vm"
-DNS2="vm.local"
-DNS3="*.vm.local"
+DAYS=3650
+ORG="LocalDEV"
+CN="LocalDEV localhost"
+DNS1="localhost"
+DNS2="localhost.x"
+DNS3="*.localhost.x"
+DNS4="local"
+DNS5="local.x"
+DNS6="*.local.x"
 OUT="./certs.local"
 
 echo "Clearing existing HTTPS SSL certs..."
@@ -55,6 +58,9 @@ subjectAltName = @alt_names
 DNS.1 = $DNS1
 DNS.2 = $DNS2
 DNS.3 = $DNS3
+DNS.4 = $DNS4
+DNS.5 = $DNS5
+DNS.6 = $DNS6
 EOF
 )
 

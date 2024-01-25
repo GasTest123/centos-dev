@@ -5,9 +5,9 @@ ROOTCA="../certs.rootCA/rootCA.crt"
 ROOTCAKEY="../certs.rootCA/rootCA.key"
 
 CERT="ca"
-DAYS=825
-ORG="DEV"
-CN="10.21.248.0/24"
+DAYS=3650
+ORG="LocalDEV"
+CN="LocalDEV 10.21.248.0/24"
 IPP="10.21.248"
 OUT="./certs.ip"
 
