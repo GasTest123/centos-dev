@@ -5,7 +5,7 @@ ROOTCA="../certs.rootCA/rootCA.crt"
 ROOTCAKEY="../certs.rootCA/rootCA.key"
 
 CERT="ca"
-DAYS=3650
+DAYS=825
 ORG="LocalDEV"
 CN="LocalDev sslip.io"
 DNS1="sslip.io"

@@ -5,7 +5,7 @@ ROOTCA="../certs.rootCA/rootCA.crt"
 ROOTCAKEY="../certs.rootCA/rootCA.key"
 
 CERT="ca"
-DAYS=3650
+DAYS=825
 ORG="LocalDEV"
 CN="LocalDEV us.to"
 DNS1="us.to"
